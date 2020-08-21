@@ -66,6 +66,7 @@ body {
 
 .content__card_not-selected:hover {
     border: 4px solid #2EA8E6;
+    z-index: 1000;
 }
 
 .content__card_not-selected:after {
@@ -123,6 +124,7 @@ body {
     font-weight: normal;
     line-height: 1.2;
     margin: 23px 45px 3px;
+    z-index: -1;
 }
 
 .content__card-subtitle_pink {
@@ -135,6 +137,7 @@ body {
     font-weight: bold;
     line-height: 1.2;
     margin: 0 0 0px 45px;
+    z-index: -1;
 }
 
 .content__card-info {
@@ -143,6 +146,7 @@ body {
     font-weight: bold;
     line-height: 1.2;
     margin: 0 0 16px 45px;
+    z-index: -1;
 }
 
 .content__card-description {
@@ -151,6 +155,7 @@ body {
     color: #666;
     line-height: 1.2;
     margin: 0 0 0 45px;
+    z-index: -1;
 }
 
 .content__card-circle {

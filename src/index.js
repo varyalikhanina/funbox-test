@@ -38,6 +38,9 @@ function disapprove() {
     if(event.target.closest('.content__card_selected')) {
         const card = event.target.closest('.content__card_selected');
         card.classList.add('hover');
+    } else if (event.target.closest('.content__card_not-selected')) {
+        const card = event.target.closest('.content__card_not-selected');
+        card.classList.remove('hover');
     } else {
         const card = event.target.closest('.content__card_not-selected');
         card.classList.remove('hover');
@@ -46,3 +49,4 @@ function disapprove() {
 
 cards.addEventListener('click', toggleStyles);
 cards.addEventListener('mouseover', disapprove);
+cards.addEventListener('click', disapprove);
