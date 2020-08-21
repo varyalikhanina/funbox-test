@@ -61,20 +61,40 @@ body {
 
 .content__card_not-selected {
     border: 4px solid #5897d6;
+    transition: .2s ease-in-out;
+}
+
+.content__card_not-selected:hover {
+    border: 4px solid #2EA8E6;
 }
 
 .content__card_not-selected:after {
     border-top: 45px solid #5897d6;
     border-right: 45px solid transparent;
+    transition: .2s ease-in-out;
+}
+
+.content__card_not-selected:hover::after {
+    border-top: 45px solid #2EA8E6;
 }
 
 .content__card_selected {
     border: 4px solid #ba1c65;
+    transition: .2s ease-in-out;
+}
+
+.content__card_selected:hover {
+    border: 4px solid #E52E7A;
 }
 
 .content__card_selected:after {
     border-top: 45px solid #ba1c65;
     border-right: 45px solid transparent;
+    transition: .2s ease-in-out;
+}
+
+.content__card_selected:after {
+    border-top: 45px solid #E52E7A;
 }
 
 .content__card_disabled {
@@ -147,10 +167,20 @@ body {
 
 .content__card-circle_not-selected {
     background-color: #5897d6;
+    transition: .2s ease-in-out;
+}
+
+.content__card_not-selected:hover > .content__card-circle_not-selected {
+    background-color: #2EA8E6;
 }
 
 .content__card-circle_selected {
     background-color: #ba1c65;
+    transition: .2s ease-in-out;
+}
+
+.content__card_selected:hover > .content__card-circle_selected {
+    background-color: #E52E7A;
 }
 
 .content__card-circle_disabled {
@@ -183,13 +213,14 @@ body {
 }
 
 .content__card-link {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dashed;
     color: #5897d6;
+    transition: .2s ease-in-out;
 }
 
 .content__card-link:hover {
-    text-decoration: underline;
-    text-decoration-style: dashed;
+    color: #2EA8E6;
 }
 
 .content__card-text {
