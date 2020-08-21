@@ -125,6 +125,10 @@ body {
     margin: 23px 45px 3px;
 }
 
+.content__card-subtitle_pink {
+    color: #E52E7A;
+}
+
 .content__card-title {
     font-size: 48px;
     color: #000;
