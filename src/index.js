@@ -34,14 +34,15 @@ function toggleStyles(event) {
     };
 }
 
-function toggleText(event) {
-    if (event.target.closest('.content__card_selected')) {
+function disapprove() {
+    if(event.target.closest('.content__card_selected')) {
         const card = event.target.closest('.content__card_selected');
-        const cardSubtitle = card.querySelector('.content__card-subtitle');
-        cardSubtitle.classList.add('hidden');
-        cardSubtitle.nextElementSibling.classList.remove('hidden');
-    };
+        card.classList.add('hover');
+    } else {
+        const card = event.target.closest('.content__card_not-selected');
+        card.classList.remove('hover');
+    }
 }
 
 cards.addEventListener('click', toggleStyles);
-cards.addEventListener('mouseout', toggleText);
+cards.addEventListener('mouseover', disapprove);

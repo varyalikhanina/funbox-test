@@ -238,6 +238,15 @@ body {
     display: none;
 }
 
+.hover:hover .content__card-subtitle {
+    display: none;
+    z-index: 1000;
+}
+
+.hover:hover .content__card-subtitle_pink {
+    display: block;
+}
+
 @media screen and (max-width: 1280px) {
     .content__cards {
         grid-template-columns: auto auto;
