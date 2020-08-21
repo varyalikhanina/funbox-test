@@ -8,6 +8,10 @@
     "dev": "webpack-dev-server --mode development --open --watch",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varyalikhanina/funbox-test.git"
+  },
   "author": "Varya Likhanina",
   "license": "ISC",
   "devDependencies": {
